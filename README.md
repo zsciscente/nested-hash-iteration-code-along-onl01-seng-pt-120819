@@ -34,8 +34,9 @@ Your good buddy Freddy Mercury has recently developed a strawberry allergy! You 
 Iterate over the `contacts` hash and when you reach the key `:favorite_ice_cream_flavors`, remove `"strawberry"` from the array of Freddy's favorite ice cream flavors.
 
 There are at least two ways you can accomplish this, and for this codealong, we'll work with the second way.
-  1. You can iterate through the hash and, when you reach the appropriate level, check to see if the key `==` ("is equal to") `:favorite_ice_cream_flavors`. If it does, check to see if that array contains `"strawberry"`. If it does, then delete it from the array.
-  2. You can directly iterate over the hash that is the value of the `"Freddy Mercury"` key by calling an enumerator method in `contacts["Freddy Mercury"]`.  
+  1. You can directly iterate over the hash that is the value of the `"Freddy Mercury"` key by calling an enumerator method in `contacts["Freddy Mercury"]`. 
+  2. You can iterate through the hash and, when you reach the appropriate level, check to see if the key `==` ("is equal to") `:favorite_ice_cream_flavors`. If it does, check to see if that array contains `"strawberry"`. If it does, then delete it from the array.
+   
 
 ###Step 1. Iterate over the first level
 
