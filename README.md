@@ -1,6 +1,6 @@
 # Code Along: Manipulating Nested Hashes
 
-##Objectives
+## Objectives
 
 1. Iterate through a nested hash
 2. Modify the correct element in a nested hash
