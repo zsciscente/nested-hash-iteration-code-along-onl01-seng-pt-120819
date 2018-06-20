@@ -32,6 +32,7 @@ contacts = {
 }
 ```
 
+
 Your good buddy Freddy Mercury has recently developed a strawberry allergy! You
 need to delete `"strawberry"` from his list of favorite ice cream flavors in the
 `remove_strawberry` method.
