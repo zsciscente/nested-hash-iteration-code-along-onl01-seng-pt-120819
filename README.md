@@ -52,7 +52,7 @@ contacts.each do |person, contact_details_hash|
 end
 ```
 
-In the terminal, let's hit the `pry` by running `ruby bin/contacts`, and check that our defined variables (`person` and `contact_details_hash`) match our expectations.
+In the terminal, let's hit the `pry` by running `learn test`, and check that our defined variables (`person` and `contact_details_hash`) match our expectations.
 
 ```bash
 > person
