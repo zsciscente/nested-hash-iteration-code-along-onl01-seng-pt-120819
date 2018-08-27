@@ -15,7 +15,7 @@ absolutely need to get comfortable working with hashes. Let's get started!
 ## Code Along Exercise
 
 Fork and clone this lab. You'll be coding your solution in `lib/contacts.rb`.
-You'll be manipulating the following hash:
+You'll be manipulating the following `Hash`:
 
 ```ruby
 contacts = {
@@ -37,27 +37,27 @@ need to delete `"strawberry"` from his list of favorite ice cream flavors in the
 `remove_strawberry` method.
 
 Iterate over the `contacts` hash and when you reach the key
-`:favorite_ice_cream_flavors`, remove `"strawberry"` from the array of Freddy's
+`:favorite_ice_cream_flavors`, remove `"strawberry"` from the Array of Freddy's
 favorite ice cream flavors.
 
 There are at least two ways you can accomplish this, and for this codealong,
 we'll work with the second way.
 
   1. You can directly iterate over the hash that is the value of the `"Freddy
-Mercury"` key by calling an enumerator method in `contacts["Freddy Mercury"]`.  
+Mercury"` key by calling an enumerator method in `contacts["Freddy Mercury"]`.
 
   2. You can iterate through the hash and, when you reach the appropriate level,
 check to see if the key `==` ("is equal to") `:favorite_ice_cream_flavors`. If
 it does, check to see if that array contains `"strawberry"`. If it does, then
-delete it from the array.
+delete it from the `Array`.
 
 #### Step 1: Iterate over the first level
 
 Inside the `remove_strawberry` method, let's take our first dive into the
-contacts hash. Then we'll use `binding.pry` to see where we are.
+contacts `Hash`. Then we'll use `binding.pry` to see where we are.
 
-We are going to first iterate over the top level of the hash where the keys
-should be the person and the values should be a hash of details about the
+We are going to first iterate over the top level of the `Hash` where the keys
+should be the person and the values should be a `Hash`  of details about the
 person.
 
 **Note on variable naming:** This process will be remarkably easier if you name
@@ -90,8 +90,7 @@ _two_ contacts). Running `learn` will also display a test, which we haven't
 passed just yet.
 
 You can also run `ruby lib/contacts` in the terminal - instead of displaying the
-the test results, this will `puts` the results of the `remove_strawberry`
-method.
+the test results, this will reach the `binding.pry`.
 
 #### Step 2. Iterate over the second level
 
