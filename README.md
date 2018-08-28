@@ -89,7 +89,7 @@ Type `exit` while in pry to continue (a second `pry` will trigger since we have
 _two_ contacts). Running `learn` will also display a test, which we haven't
 passed just yet.
 
-You can also run `ruby lib/contacts` in the terminal - instead of displaying the
+You can also run `ruby lib/contacts.rb` in the terminal - instead of displaying the
 the test results, this will reach the `binding.pry`.
 
 #### Step 2. Iterate over the second level
