@@ -46,7 +46,7 @@ we'll work with the second way.
   1. You can directly iterate over the hash that is the value of the `"Freddy
 Mercury"` key by calling an enumerator method in `contacts["Freddy Mercury"]`.
 
-  2. You can iterate through the hash and, when you reach the appropriate level,
+  2. You can set a conditional to iterate through the hash for `Freddy Mercury` only and when you reach the appropriate level,
 check to see if the key `==` ("is equal to") `:favorite_ice_cream_flavors`. If
 it does, check to see if that array contains `"strawberry"`. If it does, then
 delete it from the `Array`.
@@ -96,8 +96,10 @@ the test results, this will reach the `binding.pry`.
 
 ```ruby
 contacts.each do |person, contact_details_hash|
-  contact_details_hash.each do |attribute, data|
-    binding.pry
+  if person == "Freddy Mercury"
+    contact_details_hash.each do |attribute, data|
+      binding.pry
+    end
   end
 end
 ```
@@ -116,9 +118,11 @@ Again, let's jump into our `binding.pry` using `learn`. You should see:
 
 ```ruby
 contacts.each do |person, contact_details_hash|
-  contact_details_hash.each do |attribute, data|
-    if attribute == :favorite_ice_cream_flavors
-      binding.pry
+  if person == "Freddy Mercury"
+    contact_details_hash.each do |attribute, data|
+      if attribute == :favorite_ice_cream_flavors
+        binding.pry
+      end
     end
   end
 end
@@ -136,9 +140,11 @@ about it in the ruby docs.][rubydocs].
 
 ```ruby
 contacts.each do |person, contact_details_hash|
-  contact_details_hash.each do |attribute, data|
-    if attribute == :favorite_ice_cream_flavors
-      data.delete_if {|ice_cream| ice_cream == "strawberry"}
+  if person == "Freddy Mercury"
+    contact_details_hash.each do |attribute, data|
+      if attribute == :favorite_ice_cream_flavors
+        data.delete_if {|ice_cream| ice_cream == "strawberry"}
+      end
     end
   end
 end
@@ -147,9 +153,11 @@ end
 ```ruby
 def remove_strawberry(contacts)
   contacts.each do |person, contact_details_hash|
-    contact_details_hash.each do |attribute, data|
-      if attribute == :favorite_ice_cream_flavors
-        data.delete_if {|ice_cream| ice_cream == "strawberry"}
+    if person == "Freddy Mercury"
+      contact_details_hash.each do |attribute, data|
+        if attribute == :favorite_ice_cream_flavors
+          data.delete_if {|ice_cream| ice_cream == "strawberry"}
+        end
       end
     end
   end
